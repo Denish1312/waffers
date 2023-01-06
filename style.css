@@ -50,7 +50,7 @@ body {
 
 .logo {
     font-family: "Modak", cursive;
-
+    font-weight: 100;
     font-size: 2.5rem;
 }
 
@@ -190,7 +190,7 @@ input[type=checkbox]:checked~#ul-menu {
     width: 50%;
     font-size: 6rem;
     margin: 0;
-
+    font-weight: 100;
 
 }
 
@@ -357,6 +357,7 @@ input[type=checkbox]:checked~#ul-menu {
     width: 44%;
     line-height: 1;
     margin: 2rem auto;
+    font-weight: 100;
 }
 
 .flavour-title p {
@@ -488,6 +489,7 @@ input[type=checkbox]:checked~#ul-menu {
     /* width: 44%; */
     line-height: 1;
     margin-bottom: 0;
+    font-weight: 100;
 
 }
 
@@ -603,6 +605,7 @@ input[type=checkbox]:checked~#ul-menu {
     font-size: 4rem;
     margin: 1rem 0;
     color: #836001;
+    font-weight: 100;
 }
 
 
@@ -659,6 +662,7 @@ input[type=checkbox]:checked~#ul-menu {
     width: 53%;
     line-height: 1;
     margin: 2rem auto;
+    font-weight: 100;
 }
 
 .video-title p {
@@ -688,7 +692,7 @@ input[type=checkbox]:checked~#ul-menu {
     margin-top: 12rem;
     margin-bottom: 0px;
     line-height: 1.1;
-
+    font-weight: 100;
 }
 
 .play-icon {
@@ -747,6 +751,7 @@ input[type=checkbox]:checked~#ul-menu {
     width: 44%;
     line-height: 1;
     margin: 2rem auto;
+    font-weight: 100;
 }
 
 .about-title p {
@@ -877,6 +882,7 @@ footer {
     line-height: 1;
     margin: 2rem auto;
     padding-top: 7%;
+    font-weight: 100;
 }
 
 .rotate-try {
@@ -889,6 +895,7 @@ footer {
 
 .rotate-try h1 {
     margin: 0%;
+    font-weight: 100;
 }
 
 .try-2 {
@@ -923,6 +930,7 @@ footer {
     width: 50%;
     line-height: 1;
     margin: 2rem auto;
+    font-weight: 100;
 }
 
 .copy-desc {
