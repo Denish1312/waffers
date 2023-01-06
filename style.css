@@ -1,0 +1,1257 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    color: white;
+}
+
+
+
+/* scrolling button :end */
+.nav-hero {
+    background-image: radial-gradient(circle at 70%, #fdc92e 20%, #01876f 10%, #0daa90 20%, #0caf96 20%, #0daa90 30%, #0caf96 30%, #0daa90 40%, #0caf96 40%, #0daa90 50%, #0caf96 50%, #0daa90 60%, #0caf96 60%, #0daa90 70%, #0caf96 70%, #0daa90 80%, #0caf96 80%, #0daa90 90%, #0caf96 90%, #0daa90 100%, #0caf96 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* height: 120vh; */
+    -webkit-animation: slide-top 0.4s linear both;
+    animation: slide-top 0.4s linear both;
+    max-width: 100%;
+}
+
+/* background animation start */
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+/* background animation :end */
+
+.logo {
+    font-family: "Modak", cursive;
+
+    font-size: 2.5rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/*Strip the ul of padding and list styling*/
+#ul-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* position: absolute; */
+}
+
+/*Create a horizontal list with spacing*/
+.li-menu {
+    display: inline-block;
+    /* float: left; */
+    margin-right: 1px;
+}
+
+/*Style for menu links*/
+.li-menu a {
+    display: block;
+    min-width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    color: #fff;
+    /* background: #2f3036; */
+    text-decoration: none;
+}
+
+/*Hover state for top level links*/
+.li-menu:hover a {
+    background: #19c589;
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+   
+}
+
+/*Hide checkbox*/
+input[type=checkbox] {
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked~#ul-menu {
+    display: block;
+}
+
+/*Responsive Styles*/
+@media screen and (max-width : 760px) {
+
+    /*Make dropdown links appear inline*/
+    #ul-menu {
+        position: static;
+        display: none;
+    }
+
+    /*Create vertical spacing*/
+    .li-menu {
+        margin-bottom: 1px;
+    }
+
+    /*Make all menu links full width*/
+    #ul-menu .li-menu,
+    .li-menu a {
+        width: 100%;
+    }
+
+    /*Display 'show menu' link*/
+    .show-menu {
+        display: block;
+    }
+}
+
+
+
+/* .navbar-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.navbar-menu ul li {
+    list-style: none;
+    padding: 0 2rem;
+}
+
+.navbar-menu ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+} */
+
+
+
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    height: 100vh;
+    padding-top: 1rem;
+
+}
+
+.hero-title {
+    margin: 5rem 0 0rem 4rem;
+    line-height: 1;
+
+}
+
+.hero-title h1 {
+    font-family: "Modak", cursive;
+    width: 50%;
+    font-size: 6rem;
+    margin: 0;
+
+
+}
+
+.hero-title p {
+    width: 36%;
+    /* margin-left: 5rem; */
+    margin: 1rem 0 2rem 5rem;
+}
+
+.snacking {
+
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #fac830;
+    border: 2px solid #fac830;
+    cursor: pointer;
+    display: inline-flex;
+
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.snacking:hover {
+    background-color: #fac830;
+    color: #7f5700;
+}
+
+.snacking:active {
+    background-color: #fac830;
+    color: #7f5700;
+}
+
+
+
+
+/* hero image css :start */
+.outCircle {
+    width: 24rem;
+    height: 24rem;
+    /* border: 2px solid red; */
+    /* background-color: lightblue; */
+    left: -31.2rem;
+    position: absolute;
+    top: 5rem;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 50%;
+    rotate: 13deg;
+
+}
+
+.main-img {
+    height: 22rem;
+    position: absolute;
+    top: 1rem;
+    left: 5rem;
+}
+
+.rotate {
+    width: 100%;
+    height: 100%;
+    animation: circle 10s infinite linear;
+}
+
+.main-img1 {
+    width: 25%;
+    position: absolute;
+    left: -29px;
+    top: -24px;
+    rotate: -116deg;
+}
+
+.width-max {
+    width: 100%;
+}
+
+.main-img2 {
+    width: 25%;
+    position: absolute;
+    top: -68px;
+    left: 12rem;
+}
+
+.main-img3 {
+    width: 25%;
+    position: absolute;
+    top: 5rem;
+    left: 21rem;
+}
+
+.main-img4 {
+    width: 25%;
+    position: absolute;
+    left: -5rem;
+    top: 12rem;
+}
+
+.main-img5 {
+    width: 25%;
+    position: absolute;
+    top: 19rem;
+    left: 19rem;
+}
+
+.main-img6 {
+    width: 25%;
+    position: absolute;
+    top: 21rem;
+    left: 4rem;
+}
+
+.main-img6 img {
+    width: 65%;
+}
+
+@-webkit-keyframes circle {
+    from {
+        -webkit-transform: rotateZ(0deg)
+    }
+
+    to {
+        -webkit-transform: rotateZ(360deg)
+    }
+}
+
+/* main section css :start */
+
+.main-section {
+    background-color: #00957b;
+    position: relative;
+    width: 100%;
+    border-radius: 50px;
+    top: -5rem;
+    padding-top: 1rem;
+}
+
+/* flavour css :start */
+
+.flavour-title {
+    margin: 6rem 0;
+}
+
+.flavour-title h1 {
+    text-align: center;
+    font-family: "Modak", cursive;
+    font-size: 3.5rem;
+    width: 44%;
+    line-height: 1;
+    margin: 2rem auto;
+}
+
+.flavour-title p {
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.flavour-image {
+    background-image: radial-gradient(circle at 52%, #fdc92e 27%, #066a59 10%);
+    width: 70%;
+    margin: auto;
+
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.flavour-image ul img {
+    height: 18rem;
+
+}
+
+.flavour-image ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flavour-image ul li {
+    list-style: none;
+    padding: 0 2rem;
+}
+
+.flavour-image ul li:nth-child(2) {
+    scale: 1.2;
+}
+
+/* .mint-leaf-1{
+    position: absolute;
+    top: 19rem;
+    height: 8rem;
+    left: 45rem;
+    rotate: 27deg;
+} */
+
+/* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+#inner-orbit {
+    position: absolute;
+    top: 22rem;
+    left: 32rem;
+    width: 350px;
+    height: 350px;
+    /* border: 2px red dashed; */
+    border-radius: 100%;
+    -webkit-animation: spin-right 1s linear;
+    animation: spin-right 1s linear;
+}
+
+#inner-orbit1 {
+    position: absolute;
+    top: 23rem;
+    left: 32rem;
+    width: 350px;
+    height: 350px;
+    /* border: 2px blue dashed; */
+    border-radius: 100%;
+    -webkit-animation: spin-right 1s linear reverse;
+    animation: spin-right 1s linear reverse;
+}
+
+/* .ml-1:hover{
+    animation: spin-right 1s linear;
+  }
+  .ml-2:hover{
+    animation: spin-right 1s linear reverse;
+  } */
+
+
+
+/* ---------- Animation ---------- */
+@-webkit-keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* .main-wafer-img{
+      width: 13rem;
+      position: absolute;
+      top: 7rem;
+      left: 9rem;
+  } */
+.ml-1 {
+    width: 4rem;
+    position: absolute;
+    top: -2rem;
+    left: 14rem;
+    rotate: 24deg;
+}
+
+.ml-2 {
+    width: 4rem;
+    position: absolute;
+    top: 15rem;
+    left: 4rem;
+    rotate: 225deg;
+}
+
+/* flavour css :end */
+
+
+/* slide show css :start */
+
+/* SLIDESHOW TITLE CSS */
+.slideshow-title {
+    width: 50%;
+    margin: 10rem auto;
+    margin-bottom: 0;
+}
+
+.slideshow-title h1 {
+    text-align: center;
+    font-family: "Modak", cursive;
+    font-size: 3.5rem;
+    /* width: 44%; */
+    line-height: 1;
+    margin-bottom: 0;
+
+}
+
+.slide-btn {
+    background-color: #ffeb3b;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    margin: 1rem auto;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 21%;
+    width: auto;
+    /* margin-top: -30px; */
+    padding: 3.5rem;
+    color: rgba(201, 219, 103, 1);
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 0 150px 150px 0;
+    user-select: none;
+    background-color: #00806c;
+    margin: 0 10rem;
+    box-shadow: inset 0 0 10px #000000;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 150px 0px 0px 150px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* slide show css :end */
+
+/* good for css :start */
+
+.good-for {
+    overflow: hidden;
+    background-color: #fdc92e;
+}
+
+.good-for-nature {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+
+    align-items: center;
+}
+
+.good-for img {
+    width: 8%;
+    height: 75%;
+}
+
+.good-for h1 {
+    font-family: "Modak", cursive;
+    font-size: 4rem;
+    margin: 1rem 0;
+    color: #836001;
+}
+
+
+
+/* animation for good for health :start */
+
+.earth-left {
+    /* -webkit-animation: earth-left 8s linear infinite both; 
+    animation: earth-left 8s linear infinite both; */
+
+}
+
+
+
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes earth-left {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+/* animation for good for health :end */
+
+/* good for css :end */
+
+/* video section :start */
+
+.video-title h1 {
+    text-align: center;
+    font-family: "Modak", cursive;
+    font-size: 3.5rem;
+    width: 53%;
+    line-height: 1;
+    margin: 2rem auto;
+}
+
+.video-title p {
+    text-align: center;
+    width: 31%;
+    margin: 0 auto;
+}
+
+.video-desc {
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    width: 75%;
+    margin: auto;
+    margin-top: 4rem;
+    background-image: url('./image/video-bg.png');
+}
+
+.video-desc img {
+    width: 50%;
+}
+
+.video-desc h1 {
+    font-family: "Modak", cursive;
+    width: 37%;
+    font-size: 6rem;
+    margin-top: 12rem;
+    margin-bottom: 0px;
+    line-height: 1.1;
+
+}
+
+.play-icon {
+    /* border: 2px solid yellow; */
+    /* height: 6rem;
+    width: 6rem;
+    border-radius: 50%; */
+
+    position: absolute;
+    top: 9rem;
+    left: 20rem;
+}
+
+.play-icon .fa {
+    font-size: 2rem;
+    /* padding-left: 1.5rem; */
+    /* padding-top: 0.5rem; */
+    color: #816101;
+    background-color: #fdc92e;
+    border-radius: 50%;
+    padding: 2.5rem 3rem;
+}
+
+/* video section :end */
+
+/* about section css :start */
+.about {
+    margin-top: 6rem;
+}
+
+.about-img-div {
+    /* position: relative; */
+    border: 2px solid transparent;
+    height: 10rem;
+    width: 50%;
+    margin: auto;
+    border-radius: 100px;
+    margin-top: 10rem;
+    box-shadow: inset 0 0 20px #00584a;
+
+}
+
+.about-slide-img {
+    width: 33%;
+    /* margin-top: 3rem; */
+    height: 20rem;
+    position: absolute;
+    left: 30%;
+    top: 6rem;
+}
+
+.about-title h1 {
+    text-align: center;
+    font-family: "Modak", cursive;
+    font-size: 3.5rem;
+    width: 44%;
+    line-height: 1;
+    margin: 2rem auto;
+}
+
+.about-title p {
+    text-align: center;
+    width: 37%;
+    margin: 0 auto;
+}
+
+/* about section css :end */
+.about-desc {
+    /* margin: 6rem; */
+}
+
+/* Slideshow container */
+.slideshow-container-about {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Slides */
+.mySlides-about {
+    /* display: none; */
+    /* padding: 80px; */
+    text-align: center;
+    /* width: 30%; */
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev-about,
+.next-about {
+    cursor: pointer;
+    position: absolute;
+    top: 78%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next-about {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-about:hover,
+.next-about:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text-about {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    /* position: absolute;
+    top: -4rem; */
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot-about {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot-about:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade-about {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev-about,
+    .next-about,
+    .text-about {
+        font-size: 11px
+    }
+}
+
+/* about section css :end */
+
+/* footer section css :start */
+footer {
+    background-color: #0daa90;
+    border-radius: 4rem 4rem 0px 0px;
+}
+
+.footer-title h1 {
+    text-align: center;
+    font-family: "Modak", cursive;
+    font-size: 3.5rem;
+    width: 50%;
+    line-height: 1;
+    margin: 2rem auto;
+    padding-top: 7%;
+}
+
+.rotate-try {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Modak", cursive;
+    font-size: 3rem;
+}
+
+.rotate-try h1 {
+    margin: 0%;
+}
+
+.try-2 {
+    border: 2px solid #fdc92e;
+    border-radius: 5rem 5rem 5rem 5rem;
+    padding: 1rem 4rem;
+    background-color: #fdc92e;
+    color: #816101;
+}
+
+.try-1,
+.try-3 {
+    color: #00957b;
+    /* animation: slide-right linear 5s infinite reverse; */
+}
+
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-400%);
+    }
+
+    to {
+        transform: translateX(350%);
+    }
+}
+
+.copy-title h1 {
+    text-align: center;
+    font-family: "Modak", cursive;
+    font-size: 3.5rem;
+    width: 50%;
+    line-height: 1;
+    margin: 2rem auto;
+}
+
+.copy-desc {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* footer section css :end */
+
+
+
+
+
+/*responsive*/
+
+@media only screen and (max-width: 1040px) {
+
+    .hero-title {
+        margin: 3rem 0 0rem 4rem;
+       
+    }
+    .hero-title h1 {
+        font-size: 5rem;
+    }
+
+    .outCircle {
+        width: 20rem;
+        height: 20rem;
+        /* border: 2px solid red; */
+        /* background-color: lightblue; */
+        left: -26.2rem;
+        position: absolute;
+        top: 4rem;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        border-radius: 50%;
+        rotate: 13deg;
+    }
+
+    .main-img {
+        height: 18rem;
+        position: absolute;
+        top: 1rem;
+        left: 3rem;
+    }
+
+    .main-img2 {
+        width: 25%;
+        position: absolute;
+        top: -51px;
+        left: 12rem;
+    }
+
+    .main-img3 {
+
+        top: 5rem;
+        left: 19rem;
+    }
+
+    .main-img4 {
+
+        left: -4rem;
+        top: 12rem;
+    }
+
+    .main-img6 {
+
+        top: 18rem;
+        left: 4rem;
+    }
+
+    .main-img5 {
+
+        top: 16rem;
+        left: 17rem;
+    }
+
+    #inner-orbit {
+
+        top: 26rem;
+        left: 23rem;
+    }
+
+    #inner-orbit1 {
+        top: 28rem;
+        left: 21rem;
+    }
+
+    .good-for h1 {
+
+        font-size: 3rem;
+    }
+}
+
+/*responsive:end */
+
+
+
+/* responsive for 768 */
+@media only screen and (max-width: 768px){
+
+    .nav-hero {
+        background-image: radial-gradient(circle at 73%, #fdc92e 20%, #01876f 10%, #0daa90 20%, #0caf96 20%, #0daa90 30%, #0caf96 30%, #0daa90 40%, #0caf96 40%, #0daa90 50%, #0caf96 50%, #0daa90 60%, #0caf96 60%, #0daa90 70%, #0caf96 70%, #0daa90 80%, #0caf96 80%, #0daa90 90%, #0caf96 90%, #0daa90 100%, #0caf96 100%);
+    }
+
+    .hero-title {
+        margin: 3rem 0 0rem 3rem;
+    }
+    .hero-title h1 {
+        font-size: 4rem;
+    }
+
+    .outCircle {
+        width: 15rem;
+        height: 15rem;
+        /* border: 2px solid red; */
+        /* background-color: lightblue; */
+        left: -18.7rem;
+        top: 6rem;
+    }
+
+    .main-img {
+        height: 14rem;
+    }
+
+    .main-img1 {
+        top: 0%;
+    }
+
+    .main-img2 {
+
+        top: -42px;
+        left: 8rem;
+    }
+    .main-img3 {
+        left: 14rem;
+    }
+    .main-img4 {
+        left: -2rem;
+        top: 10rem;
+    }
+    .main-img5 {
+        top: 12rem;
+        left: 12rem;
+    }
+    .main-img6 {
+        top: 13rem;
+        left: 3rem;
+    }
+    .flavour-image ul li {
+        padding: 0 1rem;
+    }
+    .flavour-image ul img {
+        height: 11rem;
+    }
+    #inner-orbit {
+        top: 32rem;
+        left: 13rem;
+    }
+    #inner-orbit1 {
+        top: 28rem;
+        left: 16rem;
+    }
+    .ml-1, .ml-2 {
+        width: 3rem;
+    }
+    .prev, .next {
+        
+        padding: 2.5rem;
+        margin: 0 5rem;
+    }
+    .good-for h1 {
+        font-size: 2.25rem;
+    }
+    .video-desc h1 {
+        
+        font-size: 5rem;
+        margin-top: 6rem;
+       
+    }
+    .play-icon {
+        top: 4rem;
+        left: 13rem;
+    }
+    .rotate-try h1 {
+       
+        font-size: 3rem;
+    }
+}
+
+/* responsive end for 768 */
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+
+    .nav-hero {
+        background-image: radial-gradient(circle at 73%, #fdc92e 20%, #01876f 10%, #0daa90 20%, #0caf96 20%, #0daa90 30%, #0caf96 30%, #0daa90 40%, #0caf96 40%, #0daa90 50%, #0caf96 50%, #0daa90 60%, #0caf96 60%, #0daa90 70%, #0caf96 70%, #0daa90 80%, #0caf96 80%, #0daa90 90%, #0caf96 90%, #0daa90 100%, #0caf96 100%);
+        height: 82vh;
+    }
+
+	#ul-menu {
+        position: absolute;
+    }
+    .hero-title h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+    .hero-title {
+        margin: 1rem 0 0rem 1rem;
+    }
+    .hero-title p {
+        margin: 1rem 0 4rem 0rem;
+    }
+    .outCircle {
+        width: 10rem;
+        height: 10rem;
+        /* border: 2px solid red; */
+        /* background-color: lightblue; */
+        left: -10.7rem;
+        top: 7rem;
+    }
+    .main-img {
+        height: 8rem;
+        left: 2.5rem;
+    }
+    .main-img1 {
+        top: 0%;
+        left: 0;
+    }
+    .main-img2 {
+        top: -22px;
+        left: 5rem;
+    }
+    .main-img3 {
+        left: 8rem;
+    }
+    .main-img4 {
+        left: -1rem;
+        top: 6rem;
+    }
+    .main-img5 {
+        top: 9rem;
+        left: 6rem;
+    }
+    .main-img6 {
+        top: 8rem;
+        left: 2rem;
+    }
+    .main-section {
+        top: -8rem;
+        padding-top: 1px;
+    }
+    .flavour-title {
+        margin:0;
+    }
+    .flavour-title h1 {
+     width: auto;
+    }
+    .flavour-title p {
+       
+        width: auto;
+    }
+    .flavour-image {
+        margin: 3rem auto;
+    }
+    .flavour-image ul img {
+        height: 7rem;
+    }
+    .ml-1, .ml-2 {
+        width: 2rem;
+    }
+    #inner-orbit1 {
+        top: 15rem;
+        left: 5rem;
+    }
+    #inner-orbit {
+        top: 25rem;
+        left: 0rem;
+    }
+    .prev, .next {
+        padding: 7px;
+        margin: 0 4rem;
+        font-size: 1rem;
+    }
+    .mySlides {
+        padding: 6px;
+    }
+    .slideshow-title {
+        width: auto;
+        margin: 5rem auto;
+        margin-bottom: 0;
+    }
+    .mySlides {
+        width: 50%;
+    }
+    .good-for h1 {
+        font-size: 1rem;
+    }
+    .video-title h1 {
+        width: auto;
+    }
+    .video-title p {
+        text-align: center;
+        width: auto;
+        margin: 0 1rem;
+    }
+    .video-desc h1 {
+        font-size: 2.5rem;
+    }
+    .play-icon .fa {
+        padding: 1.5rem 2rem;
+    }
+    .play-icon {
+        top: 3rem;
+        left: 6rem;
+    }
+    .about-title h1 {
+        width: auto;
+    }
+    .about-title p {
+        width: auto;
+        margin: 0 1rem;
+    }
+    .footer-title h1 {
+        width: auto;
+    }
+    .rotate-try h1 {
+        font-size: 1rem;
+    }
+    .copy-desc p{
+        font-size: 0.5rem;
+    }
+}

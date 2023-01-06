@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body, html {
+  margin: 0;
+}
+#box {
+  /* The box that will responsively resize */
+  border: 10px solid #000;
+  position: relative;
+}
+#box img {
+  display: block;
+}
+#box .static {
+  /* The static image helps responsively resizing the bounding box correctly */ 
+  width: 100%;
+  height: auto;
+}
+
+#box .cat {
+  /* Placing the cat absolutely and with percentage values makes it responsive within the bounding box */
+  position: absolute;
+  top: 25%;
+  left: 60%;
+  width: 20%;
+  height: auto;
+}
+#box .text {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #fff;
+  font-family: sans-serif;
+}
+  </style>
+</head>
+<body>
+  <div id="box">
+    <img src="https://c1.staticflickr.com/3/2205/2359335117_08ae4ef88f_b.jpg" class="static">
+    
+    <img src="https://media4.giphy.com/media/hBayJ7ZgH5S3C/200_s.gif" class="cat">
+    
+    <span class="text">Try to resize this window</span>
+    
+  </div>
+  
+  Content outside of the box.
+    
+    
+</body>
+</html>
